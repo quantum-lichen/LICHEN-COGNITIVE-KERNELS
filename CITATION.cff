@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ces personas ou cette architecture cognitive dans vos recherches ou applications, veuillez citer ce dépôt comme suit."
+authors:
+  - family-names: "Ouellette"
+    given-names: "Bryan"
+    email: "lmc.theory@gmail.com"
+    affiliation: "Lichen-Collectives"
+title: "Lichen Cognitive Kernels: Advanced System Prompts for AI Agents"
+version: 1.0.0
+date-released: 2026-02-15
+url: "https://github.com/Inphinie/lichen-cognitive-kernels"
+abstract: "Une collection structurée de noyaux cognitifs (personas) conçus pour optimiser l'inférence des modèles de langage. Ce projet utilise des structures de phrases récursives et une logique vectorielle pour améliorer la précision, la créativité et la rigueur scientifique des réponses générées par l'IA."
+keywords:
+  - "artificial intelligence"
+  - "prompt engineering"
+  - "cognitive science"
+  - "lichen-collectives"
+license: "MIT"

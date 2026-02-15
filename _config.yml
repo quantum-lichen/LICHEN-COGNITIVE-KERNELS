@@ -1,35 +1,30 @@
 title: "Lichen Cognitive Kernels (LCK)"
-description: "Architectures de pensée et topologies de raisonnement pour LLM."
 url: "https://Inphinie.github.io"
 baseurl: "/LICHEN-COGNITIVE-KERNELS"
 
-# --- THÈME ---
-# Utiliser le nom simple est plus stable sur les serveurs GH
 theme: jekyll-theme-primer
 
-# --- MOTEUR DE RENDU ---
+# On simplifie le moteur Markdown pour éviter les conflits avec LaTeX lors du build
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
-  math_engine: mathjax
-
-# --- PLUGINS ---
-# On ne garde que ceux qui ne sont pas forcément activés par défaut
+  # On retire temporairement math_engine ici pour voir si c'est lui qui fige le build
+  
 plugins:
-  - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-titles-from-headings
 
-# --- EXCLUSIONS ---
-# On s'assure que Jekyll ne fouille pas dans les dossiers système ou git
+# On blinde l'exclusion : Jekyll ne doit regarder QUE tes fichiers .md
 exclude:
-  - node_modules/
-  - vendor/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+  - vendor/
   - .bundle/
   - .git/
   - .github/
-  - "vendor/bundle/"
-  - "vendor/cache/"
+  - _site/
+  - .jekyll-cache/
+  - .jekyll-metadata

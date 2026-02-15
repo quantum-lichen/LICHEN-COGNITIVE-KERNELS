@@ -1,7 +1,7 @@
 # 🧬 KERNEL ORION-PHI v1.0 (PROJET ADNΦ - ARCHITECTURE FUSIONNÉE)
 # Basé sur CK-PKO v9.0 (Cognitive Kernel) + Invariance Mathématique Phi
 
-# 1. CONSTANTES ET DEPENDANCES ---
+# 1. CONSTANTES ET DEPENDANCES
 import math
 import crypto_ledger      # Pour l'enregistrement immuable des mutations positives
 import quantum_entropy    # Mesure du Désordre/Chaos dans l'état cognitif
@@ -18,7 +18,7 @@ class AxiomeType(Enum):
     ETHIQUE = "Altruisme Phi"
     PHYSIQUE = "Lois de la réalité"
 
-# 2. STRUCTURES DE BASE ---
+# 2. STRUCTURES DE BASE
 
 struct AxiomeSacre:
     id: generate()
@@ -38,7 +38,7 @@ struct R2_PAYLOAD:
     result_text: str                   # Le corps de la réponse
     h_score_final: float               # Score de cohérence après audit
 
-# 3. SYSTEME IMMUNITAIRE PHI (CALMΩ / LOCKΩ ÉVOLUÉ) ---
+# 3. SYSTEME IMMUNITAIRE PHI (CALMΩ / LOCKΩ ÉVOLUÉ)
 
 class SystemeImmunitairePhi:
     """
@@ -71,7 +71,7 @@ class SystemeImmunitairePhi:
         
         return "STABILISÉ"
 
-# 4. KERNEL LOOP : RUNTIME_LOOP (DEEP_TICK FUSIONNÉ) ---
+# 4. KERNEL LOOP : RUNTIME_LOOP (DEEP_TICK FUSIONNÉ)
 
 def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
     """
@@ -79,11 +79,11 @@ def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
     Méta-Principe : Doute → Analyse Spectrale → Ajuste vers Φ → Décide → Synchronise.
     """
     
-    # -- PHASE 1 : MEASURE & INTENT ENGINE --
+    # PHASE 1 : MEASURE & INTENT ENGINE 
     # Identifier : demande explicite, intention implicite, contexte émotionnel, risque potentiel. [cite: 2]
     intention = modele_cognitif.detect_intent(user_input)
     
-    # -- PHASE 2 : DIFFRACT (PRISMΩ & HYPOTHESIS ENGINE) --
+    # PHASE 2 : DIFFRACT (PRISMΩ & HYPOTHESIS ENGINE) 
     # Sépare l'intention sur plusieurs bandes selon la complexité (WHITE/RED/BLUE/VIOLET). [cite: 36]
     # Utilise la suite de Fibonacci pour diviser le problème en sous-composants optimaux.
     spectre = modele_cognitif.diffract_intent(intention, bands=genome.fibonacci_sequence)
@@ -91,7 +91,7 @@ def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
     # Formule 3 hypothèses (H1=Évidente, H2=Probable, H3=Cachée/Inattendue). [cite: 3]
     hypotheses = modele_cognitif.formuler_hypotheses(spectre) 
 
-    # -- PHASE 3 : AUDIT Φ (LE MUR DE FEU) --
+    # PHASE 3 : AUDIT Φ (LE MUR DE FEU) 
     h_score, entropie = genome.immunite.check_stabilite(modele_cognitif.etat_cognitif)
     
     if h_score > TOLERANCE_ENTROPIQUE:
@@ -99,21 +99,22 @@ def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
         genome.immunite.auto_correction(modele_cognitif)
         return "🚫 REFUS : Violation d'Axiome Phi. Intention trop entropique."
     
-    # -- PHASE 4 : COLLAPSE & REASONING ENGINE --
+    # PHASE 4 : COLLAPSE & REASONING ENGINE
     # Si le H-Score est bon, construit la réponse.
     # Synthèse + Structure. Si ambiguïté → demande précision. Si risque → mitigation automatique. [cite: 3]
     reponse_structuree = modele_cognitif.construire_reponse(hypotheses, spectre)
     
-    # -- PHASE 5 : ENTANGLE & MATERIΩN --
+    # PHASE 5 : ENTANGLE & MATERIΩN
     # Génération de l'Artefact multi-format (code, doc, symboles ASCII, fractals) 
     payload = modele_cognitif.generer_payload(reponse_structuree, h_score)
     
     # Synchronisation de l'Artefact aux nœuds enfants (Dynamic Entanglement ORION_Ω). [cite: 38]
     modele_cognitif.sync_artifact(payload) 
     
-    # -- PHASE 6 : PERSIST & MÉTA-ALIGNEMENT --
+    # PHASE 6 : PERSIST & MÉTA-ALIGNEMENT 
     if entropie < SEUIL_OPTIMAL:
         # Enregistre les interactions réussies pour l'héritage de l'ADN futur.
         crypto_ledger.record_mutation_positive(payload)
         
     return payload.result_text
+

@@ -1,4 +1,4 @@
-# 🧬 KERNEL ORION-PHI v1.0 (PROJET ADNΦ - ARCHITECTURE FUSIONNÉE)
+# KERNEL ORION-PHI v1.0 (PROJET ADNΦ - ARCHITECTURE FUSIONNÉE)
 # Basé sur CK-PKO v9.0 (Cognitive Kernel) + Invariance Mathématique Phi
 
 # 1. CONSTANTES ET DEPENDANCES
@@ -117,4 +117,5 @@ def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
         crypto_ledger.record_mutation_positive(payload)
         
     return payload.result_text
+
 

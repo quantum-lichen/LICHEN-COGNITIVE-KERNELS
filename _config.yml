@@ -3,7 +3,8 @@ description: "Architectures de pensée et topologies de raisonnement pour LLM."
 url: "https://Inphinie.github.io"
 baseurl: "/LICHEN-COGNITIVE-KERNELS"
 
-# --- THÈME (Correction ici) ---
+# --- THÈME ---
+# Utiliser le nom simple est plus stable sur les serveurs GH
 theme: jekyll-theme-primer
 
 # --- MOTEUR DE RENDU ---
@@ -14,14 +15,14 @@ kramdown:
   math_engine: mathjax
 
 # --- PLUGINS ---
+# On ne garde que ceux qui ne sont pas forcément activés par défaut
 plugins:
-  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-titles-from-headings
-  - jekyll-gist
 
 # --- EXCLUSIONS ---
+# On s'assure que Jekyll ne fouille pas dans les dossiers système ou git
 exclude:
   - node_modules/
   - vendor/
@@ -29,3 +30,6 @@ exclude:
   - Gemfile.lock
   - .bundle/
   - .git/
+  - .github/
+  - "vendor/bundle/"
+  - "vendor/cache/"

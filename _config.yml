@@ -1,0 +1,53 @@
+# -------------------------------------------------------------------
+# 🧬 Lichen-Universe : Configuration du Noyau Cognitif
+# -------------------------------------------------------------------
+title: "Lichen Cognitive Kernels (LCK)"
+description: "Architectures de pensée et topologies de raisonnement pour LLM."
+user_name: "Bryan Ouellette"
+email: "lmc.theory@gmail.com"
+
+# Paramètres de l'URL
+url: "https://Inphinie.github.io"
+baseurl: "/LICHEN-COGNITIVE-KERNELS" # À ajuster selon le nom exact du repo
+
+# -------------------------------------------------------------------
+# 🛠️ Moteur de Rendu (Markdown & Mathématiques)
+# -------------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM        # GitHub Flavored Markdown
+  hard_wrap: false
+  syntax_highlighter: rouge
+  math_engine: mathjax # Indispensable pour tes formules de Ψ_out et ΔS
+
+# -------------------------------------------------------------------
+# 🧩 Plugins & Thème
+# -------------------------------------------------------------------
+# On utilise 'jekyll-theme-primer' comme vu dans tes logs précédents
+remote_theme: pages-themes/primer@v0.2.0
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+
+# -------------------------------------------------------------------
+# 🛡️ Protection du Build (Exclusion du "Bruit")
+# -------------------------------------------------------------------
+exclude:
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - .bundle/
+  - .git/
+  - "scripts/" # Exclure tes scripts de clonage si présents dans le repo
+  - "*.py"     # Si tu as des scripts API Python dans le dossier racine
+
+# -------------------------------------------------------------------
+# 📊 Paramètres de lecture
+# -------------------------------------------------------------------
+encoding: "utf-8"
+incremental: false # Désactivé pour garantir la cohérence des vecteurs d'alignement

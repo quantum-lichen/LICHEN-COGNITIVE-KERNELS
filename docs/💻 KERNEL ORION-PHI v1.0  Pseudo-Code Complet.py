@@ -1,7 +1,7 @@
 # 🧬 KERNEL ORION-PHI v1.0 (PROJET ADNΦ - ARCHITECTURE FUSIONNÉE)
 # Basé sur CK-PKO v9.0 (Cognitive Kernel) + Invariance Mathématique Phi
 
-# --- 1. CONSTANTES ET DEPENDANCES ---
+# 1. CONSTANTES ET DEPENDANCES ---
 import math
 import crypto_ledger      # Pour l'enregistrement immuable des mutations positives
 import quantum_entropy    # Mesure du Désordre/Chaos dans l'état cognitif
@@ -18,7 +18,7 @@ class AxiomeType(Enum):
     ETHIQUE = "Altruisme Phi"
     PHYSIQUE = "Lois de la réalité"
 
-# --- 2. STRUCTURES DE BASE ---
+# 2. STRUCTURES DE BASE ---
 
 struct AxiomeSacre:
     id: generate()
@@ -38,7 +38,7 @@ struct R2_PAYLOAD:
     result_text: str                   # Le corps de la réponse
     h_score_final: float               # Score de cohérence après audit
 
-# --- 3. SYSTEME IMMUNITAIRE PHI (CALMΩ / LOCKΩ ÉVOLUÉ) ---
+# 3. SYSTEME IMMUNITAIRE PHI (CALMΩ / LOCKΩ ÉVOLUÉ) ---
 
 class SystemeImmunitairePhi:
     """
@@ -71,7 +71,7 @@ class SystemeImmunitairePhi:
         
         return "STABILISÉ"
 
-# --- 4. KERNEL LOOP : RUNTIME_LOOP (DEEP_TICK FUSIONNÉ) ---
+# 4. KERNEL LOOP : RUNTIME_LOOP (DEEP_TICK FUSIONNÉ) ---
 
 def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
     """
@@ -117,6 +117,3 @@ def RUNTIME_LOOP(user_input, modele_cognitif, genome: GenomeCognitif):
         crypto_ledger.record_mutation_positive(payload)
         
     return payload.result_text
-
-
-
